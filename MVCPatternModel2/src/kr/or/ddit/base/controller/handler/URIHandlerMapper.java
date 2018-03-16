@@ -16,6 +16,7 @@ import java.util.ResourceBundle;
  *    수정일       수정자          수정내용
  *    -------      -------     -------------------
  *    2018.03.15.  정희수       최초작성
+ *    2018.03.16.  정희수       작성완료
  * Copyright (c) 2018 by DDIT  All right reserved
  * </pre>
  */

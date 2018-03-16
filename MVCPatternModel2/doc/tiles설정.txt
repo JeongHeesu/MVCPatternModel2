@@ -1,0 +1,24 @@
+타일즈 UI 레이아웃 프레임워크
+
+1. 타일즈 라이브러리
+ 1.1  http://tiles.apache.org
+              tiles-2.2.2-bin.zip 다운
+ 1.2 WEB-INF/lib import
+     -tiles-api-2.2.2.jar
+     -tiles-core-2.2.2.jar
+     -tiles-jsp-2.2.2.jar
+     -tiles-servlet-2.2.2.jar
+     -tiles-template-2.2.2.jar
+2. 타일즈 라이브러리와 의존성을 가지고 있는 기타 라이브러리 
+   2.1 http://common.apache.org
+	    -commons-beanutils-1.8.3.jar
+	    -commons-logging-1.1.1.jar
+	    -commons-digester-2.0.jar
+   2.2 slf4j(simple logging format for java) - 로깅
+       http://www.slf4j.org
+       -slf4j-api-1.6.6.jar 
+   2.3 WEB-INF/lib import
+
+3. 타일즈 설정
+3.1 web.xml에 타일즈 설정
+3.2 타일즈 설정 파일 작성

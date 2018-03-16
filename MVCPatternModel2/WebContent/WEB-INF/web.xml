@@ -13,6 +13,7 @@
   <servlet>
   	<servlet-name>webController</servlet-name>
   	<servlet-class>kr.or.ddit.base.controller.WebController</servlet-class>
+  	<load-on-startup>2</load-on-startup>
   </servlet>
   <servlet-mapping>
   	<servlet-name>webController</servlet-name>
@@ -26,8 +27,32 @@
   	필터
   	리스너
   	.....
-  	
    -->
   
+  <servlet>
+  	<servlet-name>tiles</servlet-name>
+  	<servlet-class>org.apache.tiles.web.startup.TilesServlet</servlet-class>
+  	<init-param>
+  		<param-name>org.apache.tiles.impl.BasicTilesContainer.DEFINITIONS_CONFIG</param-name>
+  		<param-value>/WEB-INF/tiles/tiles-def.xml</param-value>
+  	</init-param>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
   
+  <!-- 
+  	액션클래스 return "member/memberList.tiles" 포워딩
+  		웹서버
+  			TilesDispatchServlet 이 tiles확장자 요청 취득
+  			TilesServlet에게 tiles 확장자를 제외한 member/memberList전달
+  				tiles 설정 파일에서 member/memberList의 레이아웃구성 definition을 찾아서 포워딩 처리
+   -->
+	<servlet>
+		<servlet-name>tilesDispatch</servlet-name>
+		<servlet-class>org.apache.tiles.web.util.TilesDispatchServlet</servlet-class>
+	</servlet>  
+	<servlet-mapping>
+		<servlet-name>tilesDispatch</servlet-name>
+		<url-pattern>*.tiles</url-pattern>
+		
+	</servlet-mapping>
 </web-app>
