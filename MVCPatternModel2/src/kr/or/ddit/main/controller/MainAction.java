@@ -36,7 +36,7 @@ public class MainAction implements IAction {
 		// view 반환
 //		return "/WEB-INF/index.jsp";
 		
-		return "/freeboard/freeboardList.do";
+		return "/user/freeboard/freeboardList.do";
 	}
 
 }

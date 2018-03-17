@@ -9,16 +9,17 @@
 <!--Loading KAdmin css 시작 -->
 <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
 <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
-<link type="text/css" rel="stylesheet" href="./styles/jquery-ui-1.10.4.custom.min.css">
-<link type="text/css" rel="stylesheet" href="./styles/font-awesome.min.css">
-<link type="text/css" rel="stylesheet" href="./styles/bootstrap.min.css">
-<link type="text/css" rel="stylesheet" href="./styles/animate.css">
-<link type="text/css" rel="stylesheet" href="./styles/all.css">
-<link type="text/css" rel="stylesheet" href="./styles/main.css">
-<link type="text/css" rel="stylesheet" href="./styles/style-responsive.css">
-<link type="text/css" rel="stylesheet" href="./styles/zabuto_calendar.min.css">
-<link type="text/css" rel="stylesheet" href="./styles/pace.css">
-<link type="text/css" rel="stylesheet" href="./styles/jquery.news-ticker.css">
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/styles/jquery-ui-1.10.4.custom.min.css">
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/styles/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/styles/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/styles/animate.css">
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/styles/all.css">
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/styles/main.css">
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/styles/style-responsive.css">
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/styles/zabuto_calendar.min.css">
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/styles/pace.css">
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/styles/jquery.news-ticker.css">
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/js/board.js">
 <!--Loading KAdmin css 끝 -->
 <!-- summernote 에디터 스타일 파일 시작 -->
 <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.1/summernote.css" rel="stylesheet">
@@ -113,24 +114,25 @@
 </div> 
 </body>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script src="./script/jquery-1.8.3.js"></script>
-<script src="./script/jquery-ui.js"></script>
-<script src="./script/bootstrap.min.js"></script>
-<script src="./script/bootstrap-hover-dropdown.js"></script>
-<script src="./script/html5shiv.js"></script>
-<script src="./script/respond.min.js"></script>
-<script src="./script/jquery.metisMenu.js"></script>
-<script src="./script/jquery.slimscroll.js"></script>
-<script src="./script/jquery.cookie.js"></script>
-<script src="./script/icheck.min.js"></script>
-<script src="./script/custom.min.js"></script>
-<script src="./script/jquery.news-ticker.js"></script>
-<script src="./script/jquery.menu.js"></script>
-<script src="./script/pace.min.js"></script>
-<script src="./script/holder.js"></script>
-<script src="./script/responsive-tabs.js"></script>
-<script src="./script/zabuto_calendar.min.js"></script>
-<script src="./script/main.js"></script>
+<script src="${pageContext.request.contextPath}/script/jquery-1.8.3.js"></script>
+<script src="${pageContext.request.contextPath}/script/jquery-ui.js"></script>
+<script src="${pageContext.request.contextPath}/script/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/script/bootstrap-hover-dropdown.js"></script>
+<script src="${pageContext.request.contextPath}/script/html5shiv.js"></script>
+<script src="${pageContext.request.contextPath}/script/respond.min.js"></script>
+<script src="${pageContext.request.contextPath}/script/jquery.metisMenu.js"></script>
+<script src="${pageContext.request.contextPath}/script/jquery.slimscroll.js"></script>
+<script src="${pageContext.request.contextPath}/script/jquery.cookie.js"></script>
+<script src="${pageContext.request.contextPath}/script/icheck.min.js"></script>
+<script src="${pageContext.request.contextPath}/script/custom.min.js"></script>
+<script src="${pageContext.request.contextPath}/script/jquery.news-ticker.js"></script>
+<script src="${pageContext.request.contextPath}/script/jquery.menu.js"></script>
+<script src="${pageContext.request.contextPath}/script/pace.min.js"></script>
+<script src="${pageContext.request.contextPath}/script/holder.js"></script>
+<script src="${pageContext.request.contextPath}/script/responsive-tabs.js"></script>
+<script src="${pageContext.request.contextPath}/script/zabuto_calendar.min.js"></script>
+<script src="${pageContext.request.contextPath}/script/main.js"></script>
+<script src="${pageContext.request.contextPath}/js/validation.js"></script>
 <!-- summernote 에디터 js 파일 시작 -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.1/summernote.js"></script>
 <!-- summernote 에디터 js 파일 끝 -->

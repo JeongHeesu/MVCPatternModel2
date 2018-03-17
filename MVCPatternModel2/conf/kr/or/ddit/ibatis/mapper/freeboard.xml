@@ -184,4 +184,11 @@
       	  WHERE BO_STATUS = 'y'
       <include refid="searchCondition"/>
 	</select>
+	
+	<select id="testList" resultClass="freeVO" >
+		select * from freeboard
+	</select>
+	
+	
+	
 </sqlMap>

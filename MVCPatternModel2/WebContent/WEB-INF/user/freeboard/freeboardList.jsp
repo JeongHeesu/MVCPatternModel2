@@ -1,5 +1,6 @@
 <%@ page language="JAVA" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,33 +22,21 @@
 				</tr>
 			</thead>
 			<tbody>
+			<c:forEach items="${testList }" var="testList" varStatus="stat">	
 				<tr>
-					<td>1</td>
-					<td>테스트1</td>
-					<td>홍길동</td>
-					<td>2016-01-01</td>
-					<td>2</td>
+					<td>${testList.bo_no }</td>
+					<td>${testList.bo_title }</td>
+					<td>${testList.bo_nickname }</td>
+					<td>${testList.bo_reg_date }</td>
+					<td>${testList.bo_hit }</td>
 				</tr>
-				<tr>
-					<td>2</td>
-					<td>테스트2</td>
-					<td>홍길동</td>
-					<td>2016-01-01</td>
-					<td>2</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>테스트3</td>
-					<td>홍길동</td>
-					<td>2016-01-01</td>
-					<td>2</td>
-				</tr>
+			</c:forEach>
 			</tbody>
 		</table>
 	</div>
 </div>
 <div >
-<form action="#" method="post" class="form-inline pull-right">
+<form action="/user/freeboard/freeboardList.do" method="post" class="form-inline pull-right">
 		<input id="search_keyword" type="text" placeholder="검색어 입력..." class="form-control" />
 		<select class="form-control" name="search_keycode" >
 			<option>검색조건</option>
@@ -57,8 +46,15 @@
 			<option value="WRITER">작성자</option>
 		</select>
 	    <button type="submit" class="btn btn-primary form-control">검색</button>
-	    <button type="button" class="btn btn-info form-control">게시글 등록</button>
+	    <button type="button" class="btn btn-info form-control"  id="insertBtn" >게시글 등록</button>
 </form>
 </div>	
 </body>
+<script type="text/javascript">
+$(function(){
+	$('#insertBtn').click(function(){
+		$(location).attr('href','/user/freeboard/freeboardForm.do');
+	});
+});
+</script>
 </html>

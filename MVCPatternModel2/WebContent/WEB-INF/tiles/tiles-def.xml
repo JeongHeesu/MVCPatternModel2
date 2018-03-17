@@ -31,7 +31,7 @@
 		return /user/memebr/memberList.tiles
 		return /user/memebr/memberFrom.tiles
 		return /user/memebr/memberView.tiles
---------------------------------------------------------------
+		===============================
 		return /admin/freeboard/freeboardList.tiles
 		return /admin/freeboard/freeboardForm.tiles
 		return /admin/freeboard/freeboardView.tiles
